@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Medical Assistance Bot</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>  
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Medical Assistance Bot</h1>
+      <div class="chat-container">
+        <div class="chat-area" id="chat-area">
+          <div class="bot-message">Hello! I am your medical assistance bot. How can I help you today?</div>
+        </div>
+        <form id="chat-form">
+          <input type="text" id="chat-input" placeholder="Type your message here...">
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
